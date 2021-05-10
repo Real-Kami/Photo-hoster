@@ -10,11 +10,11 @@ h1, h2, h3, h4, h5, h6, p, ul, li,footer {
 font-family:verdana;
 color:White;
 padding:10px 15px;
+margin:1px 0px;
 background-color:#36393f;
-}
-h1, h2, h3, h4, h5, h6, ul, li, footer {
 text-align:center;
 }
+
 h3{
 margin:20px 120px 10px 120px;
 }
@@ -34,17 +34,22 @@ img {
 position: relative;
 top: 50%;
 transform: translateY(-50%);
-width:600px;
+width:100%;
 margin:10px;
 }
 .large {
 grid-column:auto/span 2;
-width:1200px;
+width:100%;
+}
+.vlarge {
+grid-column:auto/span 3;
+width:100%;
 }
 .gridContainer {
 display:grid;
-grid-template-columns:610px 610px 610px;
+grid-template-columns:30% 30% 30%;
 gap:10px;
 margin:100px 10px;
 padding:10px;
+
 }
