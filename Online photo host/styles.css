@@ -14,7 +14,6 @@ margin:1px 0px;
 background-color:#36393f;
 text-align:center;
 }
-
 h3{
 margin:20px 120px 10px 120px;
 }
@@ -54,5 +53,4 @@ grid-template-columns:30% 30% 30%;
 gap:10px;
 margin:100px 10px;
 padding:10px;
-
 }
