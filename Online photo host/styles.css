@@ -20,11 +20,11 @@ margin:20px 120px 10px 120px;
 }
 a {
 font-family:verdana;
-color:blue;
+color:grey;
 text-decoration:none;
 }
 a:visited {
-color:blue;
+color:grey;
 text-decoration:none;
 }
 ul {
@@ -44,6 +44,9 @@ width:100%;
 .vlarge {
 grid-column:auto/span 3;
 width:100%;
+}
+.hide {
+display:none;
 }
 .gridContainer {
 display:grid;
