@@ -34,7 +34,8 @@ margin:auto;
 }
 img {
 width:100%;
-margin:10px;
+background-color:white;
+padding:25px;
 }
 .large {
 grid-column:auto/span 2;
@@ -49,8 +50,15 @@ display:none;
 }
 .gridContainer {
 display:grid;
-grid-template-columns:32% 33% 32%;
-gap:10px;
-margin:100px 10px;
+grid-template-columns:30% 30% 30%;
+gap:10px 60px;
 padding:10px;
+}
+#imgGif {
+margin:auto;
+width:fit-content;
+}
+#imgGifContent {
+width:min-content;
+max-width:90%;
 }
