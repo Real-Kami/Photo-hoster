@@ -18,7 +18,7 @@ ul, li {
 display:inline-block;
 }
 ul {
-width:100%;
+width:-webkit-fill-available;
 }
 h3{
 margin:20px 120px 10px 120px;
