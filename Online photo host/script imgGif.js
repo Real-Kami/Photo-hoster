@@ -1,4 +1,5 @@
 let container = document.getElementById("imgGif");
+
 let PhotoList = ["CLC/OT7 5.jpg",
 "CLC/OT7 3.jpg",
 "CLC/OT7 Devil.jpg",
@@ -244,6 +245,19 @@ let PhotoList = ["CLC/OT7 5.jpg",
 "RCPC/Yeonhee ringring 2.jpg",
 "RCPC/Yeonhee blue punch.jpg",
 "RCPC/Yeonhee blue punch 2.jpg",
+"AESPA/OT4.jpeg",
+"AESPA/Ningning.jpeg",
+"AESPA/Winter.jpg",
+"AESPA/Karina.jpeg",
+"AESPA/Giselle.jpeg",
+"PURPLE KISS/OT7 IV.jpg",
+"PURPLE KISS/Swan IV.jpg",
+"PURPLE KISS/Yuki IV.jpg",
+"PURPLE KISS/Na Goeun IV.jpg",
+"PURPLE KISS/Dosie IV.jpg",
+"PURPLE KISS/Park Jieun IV.jpg",
+"PURPLE KISS/Ireh IV.jpg",
+"PURPLE KISS/Chaein IV.jpg"
 ];
 
 let r = Math.floor(Math.random()*PhotoList.length);
@@ -251,8 +265,8 @@ container.innerHTML = "<img id=\"imgGifContent\" src=\"../" + PhotoList[r] + "\"
 
 function clickGif() {
 r++;
-if (r > PhotoList.length) {
-    r = 0;
+if (r == PhotoList.length) {
+r = 0;
 }
 container.innerHTML = "<img id=\"imgGifContent\" src=\"../" + PhotoList[r] + "\"/>";
 }
