@@ -1,5 +1,3 @@
-let container = document.getElementById("imgGif");
-
 let PhotoList = ["CLC/OT7 5.jpg",
 "CLC/OT7 3.jpg",
 "CLC/OT7 Devil.jpg",
@@ -252,11 +250,24 @@ let PhotoList = ["CLC/OT7 5.jpg",
 "AESPA/Giselle BM.jpg",
 "PURPLE KISS/OT6.jpg",
 "PURPLE KISS/OT6 2.jpg",
+"PURPLE KISS/OT6 3.jpg",
 "PURPLE KISS/OT7.jpg",
 "PURPLE KISS/OT7 IV.jpg",
+"PURPLE KISS/OT7 IV 2.png",
+"PURPLE KISS/OT7 IV 3.jpg",
+"PURPLE KISS/OT7 IV 4.jpg",
+"PURPLE KISS/OT7 IV 5.jpg",
 "PURPLE KISS/Swan IV.jpg",
 "PURPLE KISS/Swan.jpg",
 "PURPLE KISS/Swan 2.jpg",
+"PURPLE KISS/Swan 3.jpeg",
+"PURPLE KISS/Swan 4.jpg",
+"PURPLE KISS/Swan 5.jpg",
+"PURPLE KISS/Swan 6.jpg",
+"PURPLE KISS/Swan 7.png",
+"PURPLE KISS/Swan 8.jpg",
+"PURPLE KISS/Swan 9.jpg",
+"PURPLE KISS/Swan 10.png",
 "PURPLE KISS/Na Goeun IV.jpg",
 "PURPLE KISS/Na Goeun.jpg",
 "PURPLE KISS/Na Goeun 2.jpg",
@@ -282,6 +293,8 @@ let PhotoList = ["CLC/OT7 5.jpg",
 "PURPLE KISS/Ireh 2.jpg",
 "PURPLE KISS/Ireh 3.jpg"
 ];
+
+let container = document.getElementById("imgGif");
 
 let r = Math.floor(Math.random()*PhotoList.length);
 container.innerHTML = "<img id=\"imgGifContent\" src=\"../" + PhotoList[r] + "\"/>";
