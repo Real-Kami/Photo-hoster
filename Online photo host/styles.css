@@ -14,7 +14,7 @@ background-color:#36393f;
 width:100%;
 }
 
-#title + .gridContainer {
+#title + h3 + .gridContainer {
 margin-top:150px
 }
 
