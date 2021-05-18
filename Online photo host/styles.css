@@ -28,7 +28,8 @@ text-align:center;
 h3 {
 background-color:#36393f;
 width:80%;
-margin:auto;
+margin-left:auto;
+margin-right:auto;
 }
 
 ul {
@@ -48,9 +49,11 @@ text-decoration:none;
 
 .gridContainer {
 display:grid;
-grid-template-columns:30% 30% 30%;
+grid-template-columns:31% 30% 31%;
 gap:10px 60px;
-padding:10px;
+margin-right:24px;
+margin-top:30px;
+margin-bottom:30px;
 }
 
 .divImg {
@@ -92,4 +95,5 @@ max-width:90%;
 
 footer {
 background-color:#36393f;
+margin-top:50px;
 }
