@@ -18,6 +18,10 @@ width:100%;
 margin-top:150px
 }
 
+#title + h3 + canvas {
+margin-top:150px
+}
+
 h1, h2, h3, h4, h5, h6, ul, li, footer {
 font-family:verdana;
 color:White;
@@ -96,4 +100,64 @@ max-width:90%;
 footer {
 background-color:#36393f;
 margin-top:50px;
+}
+
+canvas {
+border:25px white solid;
+display: block;
+margin-left: auto;
+margin-right: auto;
+cursor:crosshair;
+}
+
+label {
+font-family: verdana;
+margin-left:5px;
+color:white;
+}
+
+input {
+padding: 2px;
+border-radius: 10px;
+border: 1px solid lightgray;
+font-family: verdana;
+margin-top:5px;
+margin-bottom:5px;
+width:100%;
+color:Grey;
+}
+
+input:focus {
+color:black;
+}
+
+input#getSize {
+width:35px;
+}
+
+input#getURL {
+width:calc(100% - 100px);
+}
+
+form{
+background:#36393f;
+padding:10px;
+margin:10px;
+border-radius:10px;
+}
+
+#songTable {
+margin-top:150px;
+}
+
+td {
+background-color:#36393f;
+color:white;
+font-family:verdana;
+padding:5px 15px;
+text-align:center;
+}
+
+table {
+width:100%;
 }
