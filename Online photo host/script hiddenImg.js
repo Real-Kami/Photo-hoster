@@ -6,8 +6,8 @@ let mouseX, mouseY;
 let img = new Image;
 let f = 1;
 
-img.src = decodeURIComponent(window.location.href.substring(96));
-let size = parseInt(window.location.href.substring(89, 91));
+img.src = decodeURIComponent(window.location.href.substring(90));
+let size = parseInt(window.location.href.substring(83, 85));
 
 if (window.location.href.substring(96) === "") {
 	img.src = "https://real-kami.github.io/Photo-hoster/CLC/Sorn%20Blond%20Hair.png";
@@ -54,7 +54,6 @@ document.addEventListener("mousemove",render);
 document.addEventListener("touchmove",renderTactile);
 
 function renderTactile() {
-	console.log(event.changedTouches[0].clientX)
 	let X = Math.floor((event.changedTouches[0].clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
 	let Y = Math.floor((event.changedTouches[0].clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
 
