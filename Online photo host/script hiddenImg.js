@@ -6,8 +6,8 @@ let mouseX, mouseY;
 let img = new Image;
 let f = 1;
 
-img.src = decodeURIComponent(window.location.href.substring(96));
-let size = parseInt(window.location.href.substring(89, 91));
+img.src = decodeURIComponent(window.location.href.substring(90));
+let size = parseInt(window.location.href.substring(83, 85));
 
 if (window.location.href.substring(96) === "") {
 	img.src = "../" + PhotoList[Math.floor(Math.random()*PhotoList.length)];
