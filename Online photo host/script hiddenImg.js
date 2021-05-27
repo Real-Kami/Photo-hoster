@@ -16,11 +16,6 @@ if (isNaN(size)) {
 	size = 50;
 }
 
-let getFormElement = document.getElementById("getSize");
-getFormElement.value = size;
-let getFormElement2 = document.getElementById("getURL");
-getFormElement2.value = img.src;
-
 function init() {
 
 	for (a = 0;(img.height * f) > window.innerHeight;a++) {
@@ -48,6 +43,11 @@ function init() {
 	for (a = 0;a < (img.width * f)/(size/2);a++) {
 		c.fillRect((size/2) * a -1,0,1,img.height * f)
 	}
+	
+	let getFormElement = document.getElementById("getSize");
+	getFormElement.value = size;
+	let getFormElement2 = document.getElementById("getURL");
+	getFormElement2.value = img.src;
 }
 
 document.addEventListener("mousemove",render);
