@@ -34,6 +34,8 @@ background-color:#36393f;
 width:80%;
 margin-left:auto;
 margin-right:auto;
+border-radius:10px;
+border:none;
 }
 
 ul {
@@ -114,6 +116,17 @@ label {
 font-family: verdana;
 margin-left:5px;
 color:white;
+}
+
+button {
+background-color:#36393f;
+padding: 10px;
+border-radius:10px;
+border:none;
+font-family: verdana;
+margin:10px;
+color:white;
+width:-webkit-fill-available;
 }
 
 input {

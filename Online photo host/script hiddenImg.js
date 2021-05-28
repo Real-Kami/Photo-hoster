@@ -71,10 +71,18 @@ function renderTactile() {
 }
 
 function render() {
-		let X = Math.floor((event.clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
-		let Y = Math.floor((event.clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
+	let X = Math.floor((event.clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
+	let Y = Math.floor((event.clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
 
-		c.drawImage(img, X / f, Y / f, size / f, size / f, X, Y, size, size);
+	c.drawImage(img, X / f, Y / f, size / f, size / f, X, Y, size, size);
+}
+
+function reloadRandom() {
+	if (window.location.href.substring(0, 4) === "http") {
+		window.location.href = "https://real-kami.github.io/Photo-hoster/Online%20photo%20host/HiddenImg.html"
+	} else {
+		window.location.href = "file:///C:/Users/Famille/Desktop/Camille/K-pop/Online%20photo%20host/HiddenImg.html"
+	}
 }
 
 window.onload = init;
