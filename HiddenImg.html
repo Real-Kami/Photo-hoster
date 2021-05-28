@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Kami photo host</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css" />
+
+	</head>
+
+	<body>
+
+		<div id="title">
+			<h1>Kami photo host</h1><h1>
+			</h1><h4><a href="index.html">Home</a></h4>
+			<h2>Hidden image</h2>
+		
+		</div>
+
+		<h3>Hidden image</h3>
+
+		<canvas id="displayer" width="1920" height="1080"></canvas>
+
+		<button onclick="reloadRandom()">Random image</button>
+
+		<form method="get">
+			<div class="formDiv">
+			<label for="getSize">Tile size :</label>
+ 			<input type="number" name="size" id="getSize">
+			</div>
+			<div class="formDiv">
+			<label for="getURL">Img URL :</label>
+ 			<input type="url" name="url" id="getURL">
+			</div>
+			<div class="formDiv">
+  			<input type="submit">
+			</div>
+		</form>
+
+		<script src="script photo list.js"></script>
+		<script src="script hiddenImg.js"></script>
+
+	</body>
+
+</html>
