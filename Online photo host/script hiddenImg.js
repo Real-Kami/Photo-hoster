@@ -27,7 +27,7 @@ if (isNaN(size) || size < 0 || size > 99) {
 
 function init() {
 
-	for (a = 0;(img.height * f) > window.innerHeight;a++) {
+	for (a = 0;img.width * f > window.innerWidth;a++) {
 		f = f - 0.001;
 	}
 	
@@ -62,17 +62,17 @@ function init() {
 document.addEventListener("mousemove",render);
 document.addEventListener("touchmove",renderTactile);
 
-function renderTactile() {
-	console.log(event.changedTouches[0].clientX)
-	let X = Math.floor((event.changedTouches[0].clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
-	let Y = Math.floor((event.changedTouches[0].clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
+function render() {
+	let X = Math.floor((event.clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
+	let Y = Math.floor((event.clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
 
 	c.drawImage(img, X / f, Y / f, size / f, size / f, X, Y, size, size);
 }
 
-function render() {
-	let X = Math.floor((event.clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
-	let Y = Math.floor((event.clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
+function renderTactile() {
+	console.log(event.changedTouches[0].clientX)
+	let X = Math.floor((event.changedTouches[0].clientX - canvas.offsetLeft + scrollX - 25) / (size/2)) * (size/2);
+	let Y = Math.floor((event.changedTouches[0].clientY - canvas.offsetTop + scrollY - 25) / (size/2)) * (size/2);
 
 	c.drawImage(img, X / f, Y / f, size / f, size / f, X, Y, size, size);
 }

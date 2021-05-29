@@ -129,6 +129,34 @@ color:white;
 width:-webkit-fill-available;
 }
 
+#NavButtons {
+width:fit-content;
+margin-left:auto;
+margin-right:auto;
+}
+
+#NavButtons > button {
+margin:0;
+width:auto;
+}
+
+#NavButtons > p {
+font-family:verdana;
+color:White;
+padding:5px 15px;
+text-align:center;
+background-color:#36393f;
+border-radius:10px;
+border:none;
+width:fit-content;
+}
+
+#NavButtons > p, button {
+display:inline-block;
+padding:10px;
+font-size:16px;
+}
+
 input {
 padding: 2px;
 border-radius: 10px;
