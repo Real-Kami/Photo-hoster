@@ -27,7 +27,7 @@ if (isNaN(size) || size < 0 || size > 99) {
 
 function init() {
 
-	for (a = 0;img.width * f > window.innerWidth;a++) {
+	for (a = 0;img.width * f > (window.innerWidth - 50);a++) {
 		f = f - 0.001;
 	}
 	
