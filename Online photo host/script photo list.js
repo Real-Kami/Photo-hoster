@@ -303,5 +303,13 @@ let PhotoList = ["CLC/OT7 5.jpg",
 "PURPLE KISS/Ireh IV.jpg",
 "PURPLE KISS/Ireh.jpg",
 "PURPLE KISS/Ireh 2.jpg",
-"PURPLE KISS/Ireh 3.jpg"
+"PURPLE KISS/Ireh 3.jpg",
+"4MIX/OT4.jpg",
+"4MIX/Ninja.jpg",
+"4MIX/Ninja 2.png",
+"4MIX/Ninja 3.png",
+"4MIX/Ninja 4.png",
+"4MIX/Folksong.jpg",
+"4MIX/George.jpg",
+"4MIX/Mcka.jpg"
 ];
